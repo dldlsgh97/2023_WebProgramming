@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            텍스트 그림자
+        </title>
+        <style>
+            .multiEffect {
+                color : yellow;
+                text-shadow : 2px 2px 2px black,
+                0 0 25px blue, 0 0 5px darkblue;
+            }
+            .box_shadow{
+                width:300px;
+                height:500px;
+                margin:0px;
+            }
+            #box_1{background-image: url("jordon_1.jpg");
+                width:300px;
+                height:500px;
+                background-position: center;
+                background-repeat: no-repeat;}
+            #box_2{background-image: url("jordon_2.jpg");
+                width:300px;
+                height:500px;
+                background-position: center;
+                background-repeat: no-repeat;}
+            #box_3{background-image: url("jordon_3.jpg");
+                width:300px;
+                height:500px;
+                background-position: center;
+                background-repeat: no-repeat;}
+            .box_shadow:hover{
+                box-shadow : 1px 1px 11px red;
+            }
+        </style>
+    </head>
+    <body>
+        <table border = "0">
+            <tr>
+                <th colspan="3"><h1><div class="multiEffect" >My Choice Web</div></h1></th>
+            </tr>
+            <tr>
+                <th>
+                    <div class="box_shadow" id = "box_1"></div>
+                    
+                </th>
+                <th>
+                    <div class="box_shadow" id = "box_2"></div>
+                </th>
+                <th>
+                    <div class="box_shadow" id = "box_3"></div>
+                </th>
+                
+            </tr>
+        </table>
+        
+    </body>
+</html>
