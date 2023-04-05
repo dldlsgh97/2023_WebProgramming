@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>z-index 프로퍼티</title>
+    <style>
+        div { position : absolute; }
+        img { position : absolute; }
+        #spade { z-index : -3; left : 10px; top : 20px; }
+        #clover { z-index : 2; left : 40px; top : 30px; }
+        #heart { z-index : 3; left : 80px; top : 40px; }
+        #diamond { z-index : 7; left : 120px; top : 50px; }
+    </style>
+    </head>
+    <body>
+        <h3>z-index 프로퍼티</h3>
+        <hr>
+        <div>
+            <img id="spade" src="spade_A.jpg"
+            width="100" height="140" alt="스페이드A">
+            <img id="clover" src="clover_A.jpg"
+            width="100" height="140" alt="믈로버A">
+            <img id="heart" src="heart_A.jpg"
+            width="100" height="140" alt="하트A">
+            <img id="diamond" src="diamond_A.jpg"
+            width="100" height="140" alt="다이아몬드A">
+        </div>
+    </body>
+</html>
