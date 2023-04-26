@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function adder(n){
+                var sum = 0;
+                for(i=1;i<10;i++){
+                    var result = n*i
+                    sum +=result
+                }
+                return sum
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var num = parseInt(prompt("출력할 구구단을 입력하세요"))
+            var size = 5
+            for(i=1;i<10;i++){
+                var result = num*i 
+                document.write("<div ");
+                document.write("style='font-size:"+size+"px'>");
+                document.write(num+"X"+i+"="+result);
+                document.write("</div>")
+                size+=5
+            }
+            document.write("-----------------------------------------"+"<br>")
+            document.write("<div ");
+            document.write("style='font-size:"+size+"px'>");
+            document.write("각 구간별 결과값의 총합:"+adder(num));
+            document.write("</div>")
+            
+        </script>
+    </body>
+</html>

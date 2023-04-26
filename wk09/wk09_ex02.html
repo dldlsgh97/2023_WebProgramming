@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h2>기호로 표시된 border</h2>
+        <hr>
+        <script>
+            var row_num = parseInt(prompt("출력할 행 수를 입력하세요"))
+            var im = prompt("연속적으로 기호를 4개 입력하세요")
+            for(i=0;i<row_num;i++){
+                document.write(im[0])
+            }
+            document.write("<br>")
+            for(k=0;k<row_num-2;k++){
+                document.write(im[1])
+                for(j=0;j<row_num-1;j++){
+                    document.write("&nbsp&nbsp")
+                }
+                document.write(im[2])
+                document.write("<br>")
+            }
+            for(i=0;i<row_num;i++){
+                document.write(im[3])
+            }
+            
+
+                
+            
+        </script>
+    </body>
+</html>
