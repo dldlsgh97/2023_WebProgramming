@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function ischeked(){
+                var sel = document.getElementById("fruits");
+                var idx = sel.selectedIndex;
+                if( idx == 0){
+                    alert("하나를 선택하세요!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            과일선택
+            <select id="fruits">
+                <option value="check" selected>선택하세요
+                <option value="apple">사과
+                <option value="pear">배
+                <option value="banana">바나나
+            </select>
+            <input type="button" value = "확인"onclick ="ischeked()">
+        </form>
+    </body>
+</html>

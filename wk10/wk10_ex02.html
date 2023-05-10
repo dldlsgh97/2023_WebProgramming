@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+        <script>
+            function change(){
+                style="text-transform :lowercase"
+            }
+        </script>
+    </head>
+    <body>
+        영문 문자열을 입력하세요: <input type = "text" id = "a" onfocusout="change()"><br><br>
+        입력폼을 벗어나면 영문자가 모두 소문자로 변경됩니다.
+        
+        <script>
+            function change(){
+                var texta = document.getElementById("a")
+                texta.style="text-transform :lowercase"
+            }
+        </script>
+    </body>
+</html>

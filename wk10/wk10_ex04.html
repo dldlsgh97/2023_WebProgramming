@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function change(){
+                var Bu = document.getElementById("B")
+                Bu.style.backgroundColor = "green";
+                Bu.style.color = "white";
+            }
+
+            function first(){
+                var Bu1 = document.getElementById("B")
+                Bu1.style.backgroundColor = "gray";
+                Bu1.style.color = "black";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value ="버튼을 눌러보세요." id ="B" onmousedown="change()" onmouseup="first()">
+    </body>
+</html>

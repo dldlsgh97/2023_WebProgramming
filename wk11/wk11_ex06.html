@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function numClick(obj){
+                var result = document.getElementById("result");
+                if(result.value == 0){
+                    result.value = obj.value;
+                }
+                else{
+                    result.value=result.value+obj.value;
+                }
+            }
+            function numClear(){
+                var result = document.getElementById("result");
+                result.value = "0";
+            }
+            function cal(){
+                var result = document.getElementById("result");
+                result.value = eval(result.value);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            display <input type = "text" id="result" value = "0"><br>
+            <input type = "button" style = "width : 50px" value = "7" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "8" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "9" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "/" onclick="numClick(this)"><br>
+            <input type = "button" style = "width : 50px" value = "4" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "5" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "6" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "*" onclick="numClick(this)"><br>
+            <input type = "button" style = "width : 50px" value = "1" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "2" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "3" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "-" onclick="numClick(this)"><br>
+            <input type = "button" style = "width : 50px" value = "0" onclick="numClick(this)">
+            <input type = "button" style = "width : 50px" value = "+" onclick="numClick(this)"><br>
+            <input type = "button" style = "width : 50px" value = "Clear" onclick="numClear()">
+            <input type = "button" style = "width : 50px" value = "Enter"onclick="cal()"><br>
+
+        </form>
+    </body>
+</html>

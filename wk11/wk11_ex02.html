@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkFilled(obj) {
+                if(obj.value == "") {
+                    alert("enter name!");
+                    obj.focus();
+                }
+            }
+        </script>
+    </head>
+    <body onload="document.getElementById('name').focus();">
+        <form>
+            이름: <input type="text" id="name" >
+            <input type="button" value = "확인" onclick="checkFilled(getElementById('name'))" ><p>
+        </form>
+    </body>
+</html>

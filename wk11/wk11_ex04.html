@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function check(obj) {
+                for(var i = 0; i<obj.value.length;i++ ){
+                    var temp = obj.value[i];
+                    if(isNaN(temp)==true){
+                        alert("숫자만 입력하세요");
+                        obj.focus();
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="document.getElementById('name').focus();">
+        <form>
+            전화번호(-없이 입력): <input type="text" id="name" >
+            <input type="button" value = "확인" onclick="check(getElementById('name'))" ><p>
+        </form>
+    </body>
+</html>
